@@ -296,6 +296,11 @@ void Game::removeInactiveEntities()
             ++it;
         }
     }
+
+    ammoBoxes.erase(
+        std::remove_if(ammoBoxes.begin(), ammoBoxes.end(), [](const std::unique_ptr<AmmoBox> &a)
+                       { return a->isCollected(); }),
+        ammoBoxes.end());
 }
 
 void Game::handleGameOver(const std::string &message)

@@ -26,7 +26,7 @@ const Time PLAYER_START_SHOOT_COOLDOWN = seconds(0.2f);
 const Vector2f PLAYER_START_SIZE = Vector2f(60, 60);
 const Color PLAYER_START_COLOR = Color::Blue;
 
-// Player
+// Base
 const int BASE_START_HEALTH = 1000;
 const Vector2f BASE_START_SIZE = Vector2f(80, 80);
 const Color BASE_START_COLOR = Color::Cyan;
